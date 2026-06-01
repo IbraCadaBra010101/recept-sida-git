@@ -22,56 +22,34 @@
     <main>
 
         <section class="hero">
-            <h2>Välkomen till Smakriket</h2>
+            <h2>Välkommen till Smakriket</h2>
             <p>
-                Upptäck goda recept från hela världen
-                filterera recept efter kategori och hitta nya favoriter.
+                Upptäck goda recept från hela världen. Filtrera efter kategori
+                och hitta nya favoriter bland våra receptkort.
             </p>
         </section>
 
-        <section class="recipe-layout">
+        <section class="recipes">
+            <h2 class="recipes-title">Recept</h2>
 
-            <div class="main-card">
-                Stor receptbild
+            <div class="filter-bar">
+                <button class="filter-btn active" data-category="alla">Visa alla</button>
+                <button class="filter-btn green-btn" data-category="forratter">Förrätter</button>
+                <button class="filter-btn red-btn" data-category="huvudratter">Huvudrätter</button>
+                <button class="filter-btn orange-btn" data-category="efterratter">Efterrätter</button>
+                <button class="filter-btn green-btn" data-category="vegetariskt">Vegetariskt</button>
             </div>
 
-            <div class="small-card">
-                Receptkort
-            </div>
-
-            <div class="small-card">
-                Receptkort
-            </div>
-
-            <div class="wide-card">
-
-            </div>
-
-            <div class="recipe-info">
-                <h3>Receptdetaljer</h3>
-
-                <p>Ingredienser</p>
-
-                <button class="read-btn"> Läs mer</button>
-                <button class="save-btn"> Spara</button>
-            </div>
-        </section>
-
-        <section class="categories">
-
-            <button class="green-btn">Förrätter</button>
-
-            <button class=" red-btn">Huvudrätter</button>
-
-            <button class="orange-btn">Efterrätter</button>
-
-            <button class="green-btn">Vegetariskt</button>
+            <div id="recipe-grid" class="recipe-grid"></div>
         </section>
     </main>
 
     <footer>
         <p>© 2025 Smakriket - Alla rättigheter förbehåller</p>
     </footer>
-    
+
+    <script src="js/recipes.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
