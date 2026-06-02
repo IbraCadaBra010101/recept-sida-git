@@ -1,1 +1,69 @@
-// html
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smakriket</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Smakriket</div>
+
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Hem</a></li>
+                <li><a href="#recipes">Recept</a></li>
+                <li><a href="#categories">Kategorier</a></li>
+                <li><a href="#about">Om oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero">
+            <h2>Välkommen till Smakriket</h2>
+            <p>Upptäck goda recept från hela världen.</p>
+        </section>
+
+        <section id="recipes" class="recipes">
+            <h2 class="recipes-title">Recept</h2>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-category="alla">Visa alla</button>
+                <button class="filter-btn" data-category="forratter">Förrätter</button>
+                <button class="filter-btn" data-category="huvudratter">Huvudrätter</button>
+                <button class="filter-btn" data-category="efterratter">Efterrätter</button>
+                <button class="filter-btn" data-category="vegetariskt">Vegetariskt</button>
+            </div>
+
+            <div id="recipe-grid" class="recipe-grid"></div>
+        </section>
+
+        <section id="categories" class="section-box">
+            <h2>Kategorier</h2>
+            <p>Här visas kategorier senare.</p>
+        </section>
+
+        <section id="about" class="section-box">
+            <h2>Om oss</h2>
+            <p>Smakriket är ett skolprojekt.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Smakriket</p>
+    </footer>
+
+    <script src="js/recipes.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
