@@ -22,3 +22,8 @@ function initFilters(onFilter) {
     });
   });
 }
+
+function swedishfileTranslation () 
+{
+  // Done.
+}
