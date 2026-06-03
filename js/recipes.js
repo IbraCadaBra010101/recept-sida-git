@@ -84,9 +84,9 @@ const recipes = [
     id: 10,
     name: "Grönsakssallad",
     category: "vegetariskt",
-    tag: "Vegetariskt",
+    tag: "Veganskt",
     time: "10 min",
     image: "https://picsum.photos/seed/sallad/400/250",
-    description: "OFräsch sallad med säsongens grönsaker."
+    description: "Fräsch sallad med säsongens grönsaker."
   }
 ];
