@@ -73,6 +73,28 @@
         <p>© 2025 Smakriket - Alla rättigheter förbehållna</p>
     </footer>
 
+    <div id="recipe-modal" class="modal" aria-hidden="true">
+        <div class="modal__backdrop"></div>
+        <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button type="button" class="modal__close" aria-label="Stäng">&times;</button>
+            <img id="modal-image" class="modal__img" src="" alt="">
+            <div class="modal__content">
+                <span id="modal-tag" class="recipe-card__tag"></span>
+                <h2 id="modal-title"></h2>
+                <ul class="modal__meta">
+                    <li><strong>Tid:</strong> <span id="modal-time"></span></li>
+                    <li><strong>Portioner:</strong> <span id="modal-servings"></span></li>
+                    <li><strong>Svårighet:</strong> <span id="modal-difficulty"></span></li>
+                </ul>
+                <p id="modal-description" class="modal__desc"></p>
+                <h3>Ingredienser</h3>
+                <ul id="modal-ingredients" class="modal__list"></ul>
+                <h3>Gör så här</h3>
+                <p id="modal-instructions" class="modal__steps"></p>
+            </div>
+        </div>
+    </div>
+
     <script src="js/recipes.js"></script>
     <script src="js/filter.js"></script>
     <script src="js/main.js"></script>
